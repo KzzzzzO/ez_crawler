@@ -92,5 +92,5 @@ if __name__ == '__main__':
         if not r_k:
             remove_keyword(file_name, r_k)
         print('已将输出规范为数据集格式.')
-        if not input('是否继续爬取？（输入0结束）'):
+        if not int(input('是否继续爬取？（输入0结束）')):
             break
