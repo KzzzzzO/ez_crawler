@@ -59,7 +59,7 @@ def main(base_url, deep, cli_type, cli_class):
     # 将所有需要爬去的url存入列表
     if deep:
         url_list = []
-        for i in range(1, int(deep)):
+        for i in range(0, int(deep)):
            url_list.append(base_url + '?pn=' + str(i))
         print('所有的网页已经下载到本地！ 开始筛选信息...')
     else:
